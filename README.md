@@ -5,34 +5,34 @@
 
   <h3 align="center">MaterializeCSS (forked)</h3>
 
-  <p align="center">
-    Hello, this is a little fork from https://www.npmjs.com/package/materialize-css <br />
-    To fix some bugs we had.
-    <br />
-
-    Materialize, a CSS Framework based on material design.
-    <br>
-    <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
-    <br>
-    <br>
-    <a href="https://travis-ci.org/Dogfalo/materialize">
-      <img src="https://travis-ci.org/Dogfalo/materialize.svg?branch=master" alt="Travis CI badge">
-    </a>
-    <a href="https://badge.fury.io/js/materialize-css">
-      <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
-    </a>
-    <a href="https://cdnjs.com/libraries/materialize">
-      <img src="https://img.shields.io/cdnjs/v/materialize.svg" alt="CDNJS version badge">
-    </a>
-    <a href="https://david-dm.org/Dogfalo/materialize">
-      <img src="https://david-dm.org/Dogfalo/materialize/status.svg" alt="dependencies Status badge">
-      </a>
-    <a href="https://david-dm.org/Dogfalo/materialize#info=devDependencies">
-      <img src="https://david-dm.org/Dogfalo/materialize/dev-status.svg" alt="devDependency Status badge">
-    </a>
-    <a href="https://gitter.im/Dogfalo/materialize">
-      <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
-    </a>
+  <p align="center">Hello, this is a little fork from https://www.npmjs.com/package/materialize-css
+  <br>
+  To fix some bugs we had. 
+  <br>
+  <br>
+  Materialize, a CSS Framework based on material design.
+  <br>
+  <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
+  <br>
+  <br>
+  <a href="https://travis-ci.org/Dogfalo/materialize">
+    <img src="https://travis-ci.org/Dogfalo/materialize.svg?branch=master" alt="Travis CI badge">
+  </a>
+  <a href="https://badge.fury.io/js/materialize-css">
+    <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
+  </a>
+  <a href="https://cdnjs.com/libraries/materialize">
+    <img src="https://img.shields.io/cdnjs/v/materialize.svg" alt="CDNJS version badge">
+  </a>
+  <a href="https://david-dm.org/Dogfalo/materialize">
+    <img src="https://david-dm.org/Dogfalo/materialize/status.svg" alt="dependencies Status badge">
+  </a>
+  <a href="https://david-dm.org/Dogfalo/materialize#info=devDependencies">
+    <img src="https://david-dm.org/Dogfalo/materialize/dev-status.svg" alt="devDependency Status badge">
+  </a>
+  <a href="https://gitter.im/Dogfalo/materialize">
+    <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
+  </a>
 </p>
 
 ## Table of Contents
