@@ -1,7 +1,7 @@
 {
-  "name": "materialize-css",
+  "name": "dakayl_materialize-css",
   "description": "Builds Materialize distribution packages",
-  "author": "Alvin Wang, Alan Chang",
+  "author": "Nicolas Brouet fork from Alvin Wang, Alan Chang",
   "homepage": "http://materializecss.com/",
   "version": "0.100.2",
   "main": "dist/js/materialize.js",
@@ -10,10 +10,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Dogfalo/materialize.git"
+    "url": "git://github.com/Dakayl/materialize.git"
   },
   "bugs": {
-    "url": "https://github.com/Dogfalo/materialize/issues"
+    "url": "https://github.com/Dakayl/materialize/issues"
   },
   "scripts": {
     "test": "grunt travis --verbose"
