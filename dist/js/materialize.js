@@ -1,5 +1,5 @@
 /*!
- * Materialize v0.100.2 (http://materializecss.com)
+ * Materialize vundefined (http://materializecss.com)
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
@@ -5505,8 +5505,8 @@ if (Vel) {
       return this.$el.data('chips');
     }
 
-    var curr_options = $.extend({}, materialChipsDefaults, options);
-    self.hasAutocomplete = !$.isEmptyObject(curr_options.autocompleteOptions.data);
+    var merged_options = $.extend({}, materialChipsDefaults, options);
+    self.hasAutocomplete = !$.isEmptyObject(merged_options.autocompleteOptions.data);
 
     // Initialize
     this.init = function () {
@@ -5514,13 +5514,14 @@ if (Vel) {
       var chips;
       self.$el.each(function () {
         var $chips = $(this);
+        $chips[0].options = $.extend({}, materialChipsDefaults, options);
         var chipId = Materialize.guid();
         self.chipId = chipId;
 
-        if (!curr_options.data || !(curr_options.data instanceof Array)) {
-          curr_options.data = [];
+        if (!$chips[0].options.data || !($chips[0].options.data instanceof Array)) {
+          $chips[0].options.data = [];
         }
-        $chips.data('chips', curr_options.data);
+        $chips.data('chips', $chips[0].options.data);
         $chips.attr('data-index', i);
         $chips.attr('data-initialized', true);
 
@@ -5686,12 +5687,12 @@ if (Vel) {
       // Setup autocomplete if needed.
       var input = $('#' + chipId);
       if (self.hasAutocomplete) {
-        curr_options.autocompleteOptions.onAutocomplete = function (val) {
+        $chips[0].options.autocompleteOptions.onAutocomplete = function (val) {
           self.addChip({ tag: val }, $chips);
           input.val('');
           input.focus();
         };
-        input.autocomplete(curr_options.autocompleteOptions);
+        input.autocomplete($chips[0].options.autocompleteOptions);
       }
     };
 
@@ -5713,10 +5714,11 @@ if (Vel) {
     };
 
     this.setPlaceholder = function ($chips) {
-      if ($chips.data('chips') !== undefined && !$chips.data('chips').length && curr_options.placeholder) {
-        $chips.find('input').prop('placeholder', curr_options.placeholder);
-      } else if (($chips.data('chips') === undefined || !!$chips.data('chips').length) && curr_options.secondaryPlaceholder) {
-        $chips.find('input').prop('placeholder', curr_options.secondaryPlaceholder);
+      var options = $chips[0].options;
+      if ($chips.data('chips') !== undefined && !$chips.data('chips').length && options.placeholder) {
+        $chips.find('input').prop('placeholder', options.placeholder);
+      } else if (($chips.data('chips') === undefined || !!$chips.data('chips').length) && options.secondaryPlaceholder) {
+        $chips.find('input').prop('placeholder', options.secondaryPlaceholder);
       }
     };
 
@@ -5784,8 +5786,7 @@ if (Vel) {
 
     this.handleEvents();
   };
-})(jQuery);
-;(function ($) {
+})(jQuery);;(function ($) {
   $.fn.pushpin = function (options) {
     // Defaults
     var defaults = {
