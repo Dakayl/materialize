@@ -3,7 +3,7 @@
   "description": "Builds Materialize distribution packages",
   "author": "Nicolas Brouet fork from Alvin Wang, Alan Chang",
   "homepage": "http://materializecss.com/",
-  "version": "0.101.0",
+  "version": "0.101.1",
   "main": "dist/js/materialize.js",
   "style": "dist/css/materialize.css",
   "sass": "sass/materialize.scss",
