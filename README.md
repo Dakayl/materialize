@@ -3,9 +3,13 @@
     <img src="http://materializecss.com/res/materialize.svg" width="150">
   </a>
 
-  <h3 align="center">MaterializeCSS</h3>
+  <h3 align="center">MaterializeCSS (forked)</h3>
 
   <p align="center">
+    Hello, this is a little fork from https://www.npmjs.com/package/materialize-css <br />
+    To fix some bugs we had.
+    <br />
+
     Materialize, a CSS Framework based on material design.
     <br>
     <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
